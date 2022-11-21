@@ -1,0 +1,17 @@
+
+
+<div id="gmap"></div>
+
+<script>
+var map;
+function initMap() {
+  var target = document.getElementById('gmap');
+  var empire = {lat: 35.690921, lng: 139.70025799999996};
+  //Empire State Bldg の緯度（latitude）と経度（longitude）
+  map = new google.maps.Map(target, {
+    center: empire,
+    zoom: 14
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyC_jW2Mcxyx852cTy3MBUM3I-gFDEZbnzk&callback=initMap" async defer></script><!-- API_KEYの部分は取得した APIキーで置き換えます -->

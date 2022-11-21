@@ -1,5 +1,7 @@
 <%= link_to "投稿", new_admin_item_path %>
 
+<%= render "map" %>
+
 <% @items.each do |item| %>
   <%= item.name %>
   <%= item.body %>
