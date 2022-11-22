@@ -12,6 +12,16 @@ function initMap() {
     center: empire,
     zoom: 14
   });
+
+
+  var myLatlng = new google.maps.LatLng(35.690921,139.70025799999996);
+  var marker = new google.maps.Marker({
+     position: myLatlng,
+     map: map,
+     title:"Hello 新宿!"
+  });
 }
+
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyC_jW2Mcxyx852cTy3MBUM3I-gFDEZbnzk&callback=initMap" async defer></script><!-- API_KEYの部分は取得した APIキーで置き換えます -->
